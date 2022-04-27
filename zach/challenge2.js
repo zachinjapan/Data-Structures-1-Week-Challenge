@@ -81,6 +81,33 @@ class SLL {
     console.log(this.print());
   }
 
+  // 1,2,3,4
+
+  reverse() {
+    let curr = this.head;
+    let prev = null;
+    let next = null;
+
+    while (curr) {
+      //  next 2 -> 3,4
+      next = curr.next;
+      //  curr 1 -> null
+      curr.next = prev;
+      //  prev 1 -> null
+      prev = curr;
+      //  curr 1 -> null
+      curr = next;
+      // 2 -> 3,4
+    }
+
+    // gif of the process (still a little confusing)
+    //https://media.geeksforgeeks.org/wp-content/cdn-uploads/RGIF2.gif
+
+    this.head = prev;
+
+    return this;
+  }
+
   print() {
     let curr = this.head;
     let str = "";
@@ -121,3 +148,5 @@ console.log(myList.print());
 myList.removeDuplicates();
 console.log(myList.print());
 console.log(myList);
+console.log(myList.reverse());
+console.log(myList.print());
