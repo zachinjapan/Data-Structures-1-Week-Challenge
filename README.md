@@ -14,3 +14,5 @@ node foldername/javascriptfilename
    removeDuplicates
    print
    printLength
+
+- feel free to add more methods or change the above list
