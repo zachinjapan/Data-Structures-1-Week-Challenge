@@ -6,7 +6,7 @@
 ## how to contribute
 (leaving out the details, google is your friend)
 1. fork the repo
-2.  clone the repo
+2.  clone your forked repo
 3.  make changes
 4.  push the changes to your repo
 5.  click pull request
