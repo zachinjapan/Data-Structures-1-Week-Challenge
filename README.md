@@ -1,5 +1,7 @@
 # A series of prompts and challenges to study data structures and algorithms.
 
+>  I hear, and I forget; I see, and I remember; I do, and I understand. - Confucius
+
 ## how to run the challenges:
 
 `node foldername/javascriptfilename`
