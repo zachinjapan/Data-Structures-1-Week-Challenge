@@ -2,3 +2,14 @@
 //look up a few array methods, and pick one method and create a function that does
 //the exact same thing as the method. (Like pop() => function that takes an array
 //and returns the array without the last element
+
+let arr = [1, 2, 3, 4, 5, 10, 7];
+
+const popSlice = (arr) => {
+  if (arr.length) {
+    return arr.slice(0, arr.length - 1);
+  }
+  return "array is empty!";
+};
+
+console.log(popSlice(arr));
