@@ -5,7 +5,7 @@ node foldername/javascriptfilename
 
 1. Arrays. Build an array in different ways. Research different array methods and recreate an array method in a function.
 
-2. Singely Linked Lists. Build a singely linked list in different ways. Research different linked list methods and recreate a linked list with the following methods:
+2. Singely Linked Lists. Research different linked list methods and create a singley linked list with the following methods:
    add
    removeHead
    removeTail
