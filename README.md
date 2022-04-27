@@ -15,7 +15,9 @@
 5. click pull request
 6. wait for Cliff or Zach to approve the request.
 
-## challenges
+## Challenges
+
+#### Zach and Cliff are doing one challenge per day but you can blitz them if you want.
 
 1. Arrays.
 
