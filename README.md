@@ -72,14 +72,14 @@
 
 7. Graphs
 
-- Research different graph methods
-- Create a graph with a good amount of methods, here are a few examples:
-  - addVertex(value)
-  - addEdge(value1, value2)
-  - removeVertex(value)
-  - removeEdge(value1, value2)
-  - print
+   - Research different graph methods
+   - Create a graph with a good amount of methods, here are a few examples:
+       - addVertex(value)
+       - addEdge(value1, value2)
+      - removeVertex(value)
+       - removeEdge(value1, value2)
+      - print
 
-#### let's do a few coding challenges
+#### let's do a few easy coding challenges
 
 8.  Reverse an array in place (no new array and no array methods)
