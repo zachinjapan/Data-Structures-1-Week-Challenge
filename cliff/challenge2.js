@@ -26,10 +26,11 @@ class SLL {
     if (!this.head) {
       this.head = node;
       this.tail = node;
+    } else {
+      let oldTail = this.tail;
+      oldTail.next = node;
+      this.tail = node;
     }
-    let oldTail = this.tail;
-    oldTail.next = node;
-    this.tail = node;
 
     this.length++;
     return this;
@@ -42,7 +43,7 @@ class SLL {
     } else {
       let curr = this.head;
       while (curr) {
-        str += `${curr.data} ->`;
+        str += ` ${curr.data} ->`;
         curr = curr.next;
       }
     }
@@ -53,4 +54,6 @@ class SLL {
 let myList = new SLL();
 
 myList.addToTail(2);
+myList.addToTail(3);
+myList.addToTail(4);
 console.log(myList.print());
