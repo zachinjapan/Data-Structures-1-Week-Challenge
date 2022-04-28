@@ -1,10 +1,15 @@
-// Today's challenge research linked lists and create a singly linked list that has the following methods. AddToTail() addToHead()
-// DeleteFromTail()
-// ReplaceAll(oldvalue, newvalue)
-// FindIf(function that returns true or false)* findIf returns an array of values that the passed in function returns as true.
-// PrintList()
-// PrintListLength()
-// Remove Duplicates()
+// 2. Singely Linked Lists
+
+//    - Research different linked list methods
+//    - Create a singley linked list with a good amount of methods, here are a few examples:
+//      - add
+//      - removeHead
+//      - removeTail
+//      - contains
+//      - findIf(callback)
+//      - removeDuplicates
+//      - print
+//      - printLength
 
 class Node {
   constructor(val) {
@@ -96,6 +101,20 @@ class SLL {
     }
     return str;
   }
+
+  printLength() {
+    let count = 0;
+    if (!this.head) {
+      return null;
+    } else {
+      let curr = this.head;
+      while (curr) {
+        count++;
+        curr = curr.next;
+      }
+    }
+    return count;
+  }
 }
 
 let myList = new SLL();
@@ -109,3 +128,4 @@ myList.deleteFromTail();
 myList.deleteFromHead();
 
 console.log(myList.print());
+console.log(myList.printLength());
