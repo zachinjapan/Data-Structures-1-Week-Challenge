@@ -51,7 +51,6 @@ class SLL {
   }
 
   deleteFromTail() {
-    let oldTail = this.tail;
     if (!this.head) {
       return null;
     }
@@ -70,7 +69,19 @@ class SLL {
     }
   }
 
-  deleteFromHead() {}
+  deleteFromHead() {
+    if (!this.head) {
+      return null;
+    }
+    if (this.head === this.tail) {
+      this.head = null;
+      this.tail = null;
+    } else {
+      this.head = this.head.next;
+    }
+    this.length--;
+    return this;
+  }
 
   print() {
     let str = "";
@@ -95,4 +106,6 @@ myList.addToTail(4);
 myList.addToHead(1);
 myList.addToHead(0);
 myList.deleteFromTail();
+myList.deleteFromHead();
+
 console.log(myList.print());
