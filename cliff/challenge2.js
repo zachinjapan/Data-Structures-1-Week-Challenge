@@ -5,9 +5,10 @@
 //      - add
 //      - removeHead
 //      - removeTail
-//      - contains
+//      - contains(true or false)
 //      - findIf(callback)
 //      - removeDuplicates
+//      - reverseList()
 //      - print
 //      - printLength
 
@@ -88,6 +89,21 @@ class SLL {
     return this;
   }
 
+  contains(val) {
+    let curr = this.head;
+    if (!this.head) {
+      return null;
+    } else {
+      while (curr) {
+        if (curr.data === val) {
+          return true;
+        }
+        curr = curr.next;
+      }
+      return false;
+    }
+  }
+
   print() {
     let str = "";
     if (!this.head) {
@@ -121,9 +137,11 @@ let myList = new SLL();
 
 myList.addToTail(2);
 myList.addToTail(3);
+console.log(myList.contains(3));
 myList.addToTail(4);
 myList.addToHead(1);
 myList.addToHead(0);
+
 myList.deleteFromTail();
 myList.deleteFromHead();
 
