@@ -36,6 +36,42 @@ class SLL {
     return this;
   }
 
+  addToHead(val) {
+    let node = new Node(val);
+    if (!this.head) {
+      this.head = node;
+      this.tail = node;
+    } else {
+      let oldHead = this.head;
+      this.head = node;
+      this.head.next = oldHead;
+    }
+    this.length++;
+    return this;
+  }
+
+  deleteFromTail() {
+    let oldTail = this.tail;
+    if (!this.head) {
+      return null;
+    }
+    if (this.length === 1) {
+      this.head = null;
+      this.tail = null;
+    } else {
+      let curr = this.head;
+      while (curr.next !== this.tail) {
+        curr = curr.next;
+      }
+      this.tail = curr;
+      curr.next = null;
+      this.length--;
+      return curr;
+    }
+  }
+
+  deleteFromHead() {}
+
   print() {
     let str = "";
     if (!this.head) {
@@ -56,4 +92,7 @@ let myList = new SLL();
 myList.addToTail(2);
 myList.addToTail(3);
 myList.addToTail(4);
+myList.addToHead(1);
+myList.addToHead(0);
+myList.deleteFromTail();
 console.log(myList.print());
