@@ -3,14 +3,14 @@
 //    - Research different linked list methods
 //    - Create a singley linked list with a good amount of methods, here are a few examples:
 //      - add
-//      - removeHead
-//      - removeTail
-//      - contains(true or false)
-//      - findIf(callback)
+//      - removeHead ✅
+//      - removeTail ✅
+//      - contains(val) boolean ✅
+//      - findIf(callback) callback should be a function such as (val) => val % 2 === 0
 //      - removeDuplicates
 //      - reverseList()
-//      - print
-//      - printLength
+//      - print ✅
+//      - printLength ✅
 
 class Node {
   constructor(val) {
