@@ -19,7 +19,6 @@
 
 ## Challenges
 
-#### Zach and Cliff are doing one challenge per day but you can blitz them if you want.
 
 1. Arrays.
 
@@ -72,15 +71,3 @@
      - push(value)
      - pop
      - print
-
-#### let's do a few fun coding challenges
-
-7.  Reverse an array in place (no new array and no array methods)
-
-8.  Write a function that takes in a non-empty string and that returns a boolean
-    representing whether the string is a palindrome.
-
-    - A palindrome is a word that is the same whether written backward or forward.
-    - For example, `"racecar"` is a palindrome.
-    - Try to solve this using left and right pointers.
-    - https://algodaily.com/lessons/using-the-two-pointer-technique/javascript
