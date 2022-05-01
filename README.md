@@ -52,7 +52,7 @@
 4. Sorted Binary Search Trees
 
    - Research different binary search tree methods
-   - Create a binary search tree with a good amount of methods, here are a few examples:
+   - Create a binary search tree with a good amount of methods. Here are a few examples:
      - insert(value)
      - remove(value)
      - print
@@ -60,14 +60,16 @@
 5. Queues
 
    - Research different queue methods
-   - Create a queue with a good amount of methods, here are a few examples:
+   - Create a queue with a good amount of methods. Here are a few examples:
      - enqueue(value)
      - dequeue
      - print
 
 6. Stacks
    - Research different stack methods
-   - Create a stack with a good amount of methods, here are a few examples:
+   - Create a stack with a good amount of methods. Here are a few examples:
      - push(value)
      - pop
      - print
+
+7.  Nothing! Take it easy. You deserve it after completing that challenge.
