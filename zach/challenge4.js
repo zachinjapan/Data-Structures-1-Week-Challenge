@@ -57,6 +57,22 @@ class SBT {
     }
     return false;
   }
+
+  min() {
+    let curr = this.root;
+    while (curr.left) {
+      curr = curr.left;
+    }
+    return curr.value;
+  }
+
+  max() {
+    let curr = this.root;
+    while (curr.right) {
+      curr = curr.right;
+    }
+    return curr.value;
+  }
 }
 let myTree = new SBT();
 myTree.insert(10);
@@ -68,4 +84,6 @@ myTree.insert(13);
 myTree.insert(17);
 console.log(myTree.contains(5));
 console.log(myTree);
+console.log(myTree.min());
+console.log(myTree.max());
 // not sure best way to print out the tree
