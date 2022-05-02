@@ -1,6 +1,6 @@
 # A series of prompts and challenges to study data structures and algorithms.
 
->  I hear, and I forget; I see, and I remember; I do, and I understand. - Confucius
+> I hear, and I forget; I see, and I remember; I do, and I understand. - Confucius
 
 ## how to run the challenges:
 
@@ -18,7 +18,6 @@
 6. wait for Cliff or Zach to approve the request.
 
 ## Challenges
-
 
 1. Arrays.
 
@@ -66,10 +65,11 @@
      - print
 
 6. Stacks
+
    - Research different stack methods
    - Create a stack with a good amount of methods. Here are a few examples:
      - push(value)
      - pop
      - print
 
-7.  Nothing! Take it easy. You deserve it after completing that challenge.
+7. Nothing! You did it. Share your knowledge with the world!
