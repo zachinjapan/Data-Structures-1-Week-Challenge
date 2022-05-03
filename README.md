@@ -54,7 +54,7 @@
    - Create a binary search tree with a good amount of methods. Here are a few examples:
      - insert(value)
      - remove(value)
-     - print
+     - *print
 
 5. Queues
 
