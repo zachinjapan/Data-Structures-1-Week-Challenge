@@ -15,7 +15,7 @@
 3. make a folder with your name and create a Javascript file for each challenge you complete
 4. push the changes to your repo
 5. click pull request
-6. wait for Cliff or Zach to approve the request.
+6. wait for Zach to approve the request.
 
 ## Challenges
 
