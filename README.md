@@ -72,4 +72,4 @@
      - pop
      - print
 
-7. Nothing! You did it. Share your knowledge with the world!
+7. Nothing! You did it. Share your knowledge with the world! If enough people like this I will make a part 2 with more data structures.
