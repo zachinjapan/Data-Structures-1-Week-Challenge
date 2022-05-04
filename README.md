@@ -6,7 +6,7 @@
 
 `node foldername/javascriptfilename`
 
-## how to contribute
+## how to contribute and add your solutions.
 
 (leaving out the details, google is your friend)
 
