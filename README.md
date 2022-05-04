@@ -1,4 +1,4 @@
-# A series of prompts and challenges to study data structures and algorithms.
+# A series of prompts and challenges to study data structures
 
 > I hear, and I forget; I see, and I remember; I do, and I understand. - Confucius
 
