@@ -1,12 +1,12 @@
-# A series of prompts and challenges to study data structures and algorithms.
+# A series of prompts and challenges to study data structures
 
->  I hear, and I forget; I see, and I remember; I do, and I understand. - Confucius
+> I hear, and I forget; I see, and I remember; I do, and I understand. - Confucius
 
 ## how to run the challenges:
 
 `node foldername/javascriptfilename`
 
-## how to contribute
+## how to contribute and add your solutions.
 
 (leaving out the details, google is your friend)
 
@@ -15,11 +15,9 @@
 3. make a folder with your name and create a Javascript file for each challenge you complete
 4. push the changes to your repo
 5. click pull request
-6. wait for Cliff or Zach to approve the request.
+6. wait for Zach to approve the request.
 
 ## Challenges
-
-#### Zach and Cliff are doing one challenge per day but you can blitz them if you want.
 
 1. Arrays.
 
@@ -53,34 +51,25 @@
 4. Sorted Binary Search Trees
 
    - Research different binary search tree methods
-   - Create a binary search tree with a good amount of methods, here are a few examples:
+   - Create a binary search tree with a good amount of methods. Here are a few examples:
      - insert(value)
      - remove(value)
-     - print
+     - *print
 
 5. Queues
 
    - Research different queue methods
-   - Create a queue with a good amount of methods, here are a few examples:
+   - Create a queue with a good amount of methods. Here are a few examples:
      - enqueue(value)
      - dequeue
      - print
 
 6. Stacks
+
    - Research different stack methods
-   - Create a stack with a good amount of methods, here are a few examples:
+   - Create a stack with a good amount of methods. Here are a few examples:
      - push(value)
      - pop
      - print
 
-#### let's do a few fun coding challenges
-
-7.  Reverse an array in place (no new array and no array methods)
-
-8.  Write a function that takes in a non-empty string and that returns a boolean
-    representing whether the string is a palindrome.
-
-    - A palindrome is a word that is the same whether written backward or forward.
-    - For example, `"racecar"` is a palindrome.
-    - Try to solve this using left and right pointers.
-    - https://algodaily.com/lessons/using-the-two-pointer-technique/javascript
+7. Nothing! You did it. Share your knowledge with the world! If enough people like this I will make a part 2 with more data structures.
