@@ -6,9 +6,9 @@
 //      - removeHead ✅
 //      - removeTail ✅
 //      - contains(val) boolean ✅
-//      - findIf(callback) callback should be a function such as (val) => val % 2 === 0
+//      - findIf(callback) callback should be a function such as (val) => val % 2 === 0 ✅
 //      - removeDuplicates
-//      - reverseList()
+//      - reverseList() ✅
 //      - print ✅
 //      - printLength ✅
 
@@ -118,6 +118,38 @@ class SLL {
     return str;
   }
 
+  findIf(callback) {
+    let str = "";
+    if (!this.head) {
+      return null;
+    } else {
+      let curr = this.head;
+      while (curr) {
+        if (callback(curr.data)) {
+          str += ` ${curr.data} ->`;
+        }
+        curr = curr.next;
+      }
+      if (str.length === 0) return null;
+    }
+    return str;
+  }
+
+  removeDuplicates() {
+    let curr = this.head;
+    let valueList = {};
+    while (curr !== null && curr.next !== null) {
+      if (valueList[curr.next.value]) {
+        curr.next = curr.next.next;
+      } else {
+        valueList[curr.next.value] = true;
+        curr = curr.next;
+      }
+    }
+
+    console.log(this.print());
+  }
+
   printLength() {
     let count = 0;
     if (!this.head) {
@@ -131,6 +163,23 @@ class SLL {
     }
     return count;
   }
+
+  reverse() {
+    let curr = this.head;
+    this.head = this.tail;
+    this.tail = curr;
+
+    let nextNode = null;
+    let prevNode = null;
+
+    while (curr) {
+      nextNode = curr.next;
+      curr.next = prevNode;
+      prevNode = curr;
+      curr = nextNode;
+    }
+    return this;
+  }
 }
 
 let myList = new SLL();
@@ -141,9 +190,10 @@ console.log(myList.contains(3));
 myList.addToTail(4);
 myList.addToHead(1);
 myList.addToHead(0);
-
-myList.deleteFromTail();
-myList.deleteFromHead();
+myList.addToHead(0);
 
 console.log(myList.print());
-console.log(myList.printLength());
+myList.reverse();
+console.log(myList.print());
+console.log(myList.findIf((val) => val % 2 === 0));
+myList.removeDuplicates();
