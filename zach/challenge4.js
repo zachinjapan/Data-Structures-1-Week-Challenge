@@ -73,17 +73,42 @@ class SBT {
     }
     return curr.value;
   }
+
+  removeOne(value) {
+    let prev = this.root;
+    let curr = this.root;
+
+    while (curr) {
+      if (curr.value === value) {
+        prev.right = curr.right;
+        prev.left = curr.left;
+        this.count--;
+        return;
+      }
+
+      prev = curr;
+      if (curr.value < value) {
+        curr = curr.right;
+      }
+
+      if (curr.value > value) {
+        curr = curr.left;
+      }
+    }
+  }
 }
 let myTree = new SBT();
 myTree.insert(10);
 myTree.insert(5);
 myTree.insert(15);
-myTree.insert(3);
-myTree.insert(7);
-myTree.insert(13);
-myTree.insert(17);
+myTree.insert(23);
+myTree.insert(22);
+
 console.log(myTree.contains(5));
 console.log(myTree);
 console.log(myTree.min());
 console.log(myTree.max());
+myTree.removeOne(22);
+
+console.log(myTree);
 // not sure best way to print out the tree

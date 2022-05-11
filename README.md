@@ -48,13 +48,13 @@
      - remove
      - \*\*resize (if the hash map is getting too big use this by comparing the "load factor" to a threshold value and resize if it is greater than the threshold value. the hash map should be resized by doubling the size of the hash map and rehashing all the values into the new hash map.)
 
-4. Sorted Binary Search Trees
+4. Binary Search Trees
 
    - Research different binary search tree methods
    - Create a binary search tree with a good amount of methods. Here are a few examples:
      - insert(value)
      - remove(value)
-     - *print
+     - \*print
 
 5. Queues
 
