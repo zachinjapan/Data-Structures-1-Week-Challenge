@@ -116,14 +116,60 @@ class BinaryTree {
       return false;
     }
     let curr = this.root;
-    while (curr) {
+    let parent = null;
+    let found = false;
+    //create a loop while curr exists and it hasn't been found
+    while (curr && !found) {
       if (val < curr.val) {
+        parent = curr;
         curr = curr.left;
       } else if (val > curr.val) {
+        parent = curr;
         curr = curr.right;
       } else {
-        if (curr.left) {
+        found = true;
+      }
+    }
+    if (!found) {
+      return `${val} not found in tree`;
+    }
+    //if the node has no children
+    if (curr.left === null && curr.right === null) {
+      if (parent.left === curr) {
+        parent.left = null;
+      } else {
+        parent.right = null;
+      }
+    }
+    //if the node has one child
+    if (curr.left === null || curr.right === null) {
+      if (curr.left) {
+        if (parent.left === curr) {
+          parent.left = curr.left;
+        } else {
+          parent.right = curr.left;
         }
+      } else {
+        if (parent.left === curr) {
+          parent.left = curr.right;
+        } else {
+          parent.right = curr.right;
+        }
+      }
+    }
+    //if the node has two children
+    if (curr.left && curr.right) {
+      let successor = curr.right;
+      let successorParent = curr;
+      while (successor.left) {
+        successorParent = successor;
+        successor = successor.left;
+      }
+      curr.val = successor.val;
+      if (successorParent.left === successor) {
+        successorParent.left = null;
+      } else {
+        successorParent.right = null;
       }
     }
     return this;
@@ -158,4 +204,5 @@ bt.insert(7);
 bt.insert(57);
 
 console.log(bt);
-console.log(bt.find(10));
+bt.remove(10);
+console.log(bt.find(3));
